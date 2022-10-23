@@ -1,0 +1,666 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+
+local w = library:CreateWindow("Double Story Urban House")
+
+local b = w:CreateFolder("Doors")
+
+b:Label("Ground Floor",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+    
+}) 
+
+b:Button("Front Door",function()
+local args = {
+[1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Doors:FindFirstChild("Front Doorway").Door.Interact,[2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Back Door",function()
+local args = {
+[1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Doors:FindFirstChild("Back Doorway").Door.Interact,[2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+
+end)
+
+b:Button("Back Door Clsoet",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Kitchen.PantryDoor.Door.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+    end)
+
+b:Button("Bathroom",function()
+local args = {[1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Doors.Doorway.InsideDoor.Interact,[2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Label("First Floor",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+    
+}) 
+
+
+b:Button("Closet Room Hall",function()
+local args = {[1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Bedroom.BiFoldDoorCloset.BifoldDoorsLeftSide.Door.Interact,[2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+wait(0.1)
+local args = {[1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Bedroom.BiFoldDoorCloset.BifoldDoorsRightSide.Door.Interact,[2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+    end)
+
+b:Button("Blue Empty Room Hall",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Doors.Doorway.InsideDoor.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+local b = w:CreateFolder("Lights")
+
+b:Label("Ground Floor",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+    
+}) 
+
+
+b:Button("Front Door",function()
+local args = {[1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Lights.EntryLights.LightSwitch.Interact, [2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Back Door",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Lights.KitchenLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Back Door Second",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Lights.KitchenLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Furnace on Right",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.FrontRoom.GasFireplace.Dial.Interact,
+    [2] = "Value",
+    [3] = false,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Empty on Left",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Lights.LivingRoomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Bathroom",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Lights.BathroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Empty Room",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Lights.GuestBedroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Staircase 1",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").LowerLevel.Lights.EntryLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Staircase 2",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Lights.HallLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Label("First Floor",{
+    TextSize = 25;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+    
+}) 
+
+b:Button("Hall",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Lights.HallLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Master Bedroom",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Lights.MasterBedroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("M Bedroom Room Right",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Lights.StorageRoomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("M Bedroom Room Left",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Lights.OfficeLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Blue Empty Room Hall",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Lights.MasterBathroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+
+end)
+
+b:Button("Closet Room Hall",function()
+local args = {
+    [1] = workspace:FindFirstChild("Double Story Urban House").UpperLevel.Lights.BedroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+local w = library:CreateWindow("Urban House")
+
+local b = w:CreateFolder("Doors")
+
+b:Button("Front Door",function()
+local args = {[1] = workspace:FindFirstChild("Urban House").Body.Doors:FindFirstChild("Front Doorway").Door.Interact,[2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Yard Double Door",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Doors.BackSlidingDoor.SlidingDoor.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+
+end)
+
+b:Button("Yard Blinds",function()
+local args = {[1] = workspace:FindFirstChild("Urban House").Body.Windows.Window.Blinds.Interact,[2] = "Value",[3] = true,[4] = "interact"}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("First Door",function()
+    local args = {
+        [1] = workspace:FindFirstChild("Urban House").Body.Doors:FindFirstChild("Office Doorway").InsideDoor.Interact,
+        [2] = "Value",
+        [3] = true,
+        [4] = "interact"
+    }
+    game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+    end)
+    
+    b:Button("Kitchen Pantry Door",function()
+    local args = {
+        [1] = workspace:FindFirstChild("Urban House"):FindFirstChild("Kitchen and Dining Room").PantryDoor.Door.Interact,
+        [2] = "Value",
+        [3] = true,
+        [4] = "interact"
+    }
+    game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+    end)
+    
+    b:Button("Garage Door",function()
+    local args = {
+        [1] = workspace:FindFirstChild("Urban House").Body.Doors:FindFirstChild("Garage Doorway").InsideDoor.Interact,
+        [2] = "Value",
+        [3] = true,
+        [4] = "interact"
+    }
+    game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+    end)
+
+b:Button("The Latest Right Door",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Doors:FindFirstChild("Bedroom Doorway").InsideDoor.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("L Right Door Closet",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House"):FindFirstChild("Master Bedroom").BiFoldDoorCloset.BifoldDoorsLeftSide.Door.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace:FindFirstChild("Urban House"):FindFirstChild("Master Bedroom").BiFoldDoorCloset.BifoldDoorsRightSide.Door.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("L Left Room Closet",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House"):FindFirstChild("Boy's Bedroom").BiFoldDoorCloset.BifoldDoorsRightSide.Door.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+wait(0.1)
+local args = {
+    [1] = workspace:FindFirstChild("Urban House"):FindFirstChild("Boy's Bedroom").BiFoldDoorCloset.BifoldDoorsLeftSide.Door.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+
+local b = w:CreateFolder("Lights")
+
+b:Button("Front Door",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.EntranceLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Front Door 2",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.EntranceLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Kitchen Low Power",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.DiningRoomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Kitchen",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.KitchenLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+ b:Button("Garage",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights:FindFirstChild("Garage Lights").LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+    
+b:Button("Living Room",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.LivingRoomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Lamp Lving Room",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House"):FindFirstChild("Living Room").Lamp.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Living Room Furnace",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House"):FindFirstChild("Living Room").GasFireplace.Dial.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Hall",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.HallLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Left First Room",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.GirlsBedroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Right Second Room",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.OfficeLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Bathroom",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.BathroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Last Right Room",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.MasterBedroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Last Left Room",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House").Body.Lights.BoysBedroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+local w = library:CreateWindow("Urban House Singe Story")
+
+local b = w:CreateFolder("Doors")
+
+b:Button("Back Door",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Doors:FindFirstChild("Back Doorway").Door.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Side Door",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Doors:FindFirstChild("Front Doorway").Door.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Middle Front Door",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Doors.Doorway.InsideDoor.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Blind near Furnace",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Doors.Doorway.InsideDoor.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+local b = w:CreateFolder("Lights")
+
+b:Button("Haal",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Lights.LivingRoomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Left Room",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Lights.BedroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Hall Left",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Lights.KitchenLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Middle Left",function()
+    local args = {
+        [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Lights.OfficeLights.LightSwitch.Interact,
+        [2] = "Value",
+        [3] = true,
+        [4] = "interact"
+    }
+    game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+    end)
+
+b:Button("Middle Middle",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Lights.BathroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+b:Button("Middle Right",function()
+local args = {
+    [1] = workspace:FindFirstChild("Urban House Singe Story"):FindFirstChild("House Frame").Lights.BedroomLights.LightSwitch.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+local w = library:CreateWindow("Gas Station")
+
+local b = w:CreateFolder("Doors")
+
+b:Button("Front Door",function()
+local args = {
+    [1] = workspace:FindFirstChild("Convenience Store").Doorway.Door.Interact,
+    [2] = "Value",
+    [3] = true,
+    [4] = "interact"
+}
+game:GetService("ReplicatedStorage").InteractFunction:InvokeServer(unpack(args))
+end)
+
+local b = w:CreateFolder("Lights")
+
+
+
+
+local w = library:CreateWindow("LocalPlayer")
+
+local b = w:CreateFolder("LocalPlayer")
+
+b:Box("Speed","number",function(val)
+local Player = game:GetService("Players").LocalPlayer local character = Player.Character or Player.CharacterAdded:Wait() local HumanoidRootPart = character:WaitForChild("HumanoidRootPart") local Humanoid =  character:WaitForChild("Humanoid")
+if Humanoid then Humanoid.WalkSpeed = (val) end
+end)
+
+b:Box("Jump","number",function(val)
+    game:GetService('Players').LocalPlayer.Character.Humanoid.JumpPower = val
+end)
+
+b:Box("Hip Height","number",function(val)
+    game:GetService('Players').LocalPlayer.Character.Humanoid.HipHeight = val
+end)
+
+b:Slider("FOV (Default is 70)",{
+    min = 0;
+    max = 120;
+    precise = true;
+},function(val)
+    game.workspace.CurrentCamera.FieldOfView = val
+end)
+
+b:Button("Rejoin",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/mM7JBG5h", true))()
+end)
+
+b:Button("Noclip",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/hd03Vdwm", true))()
+end)
+
+b:Button("Reset",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/EEY6SATj", true))()
+end)
+
+b:Button("Print Current XYZ",function()
+function GetPOS()
+return game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame end
+print(GetPOS())
+end)
+
+b:Button("Anti-Report",function()
+    loadstring(game:HttpGet("https://paste.ee/r/GphmF", true))()
+end)
+local b = w:CreateFolder("Credits")
+
+b:Label("Made by X_Lua#7795",{
+    TextSize = 22;
+    TextColor = Color3.fromRGB(255,255,255);
+    BgColor = Color3.fromRGB(69,69,69);
+    
+}) 
+
+b:Button("Copy Invite",function()
+    setclipboard("discord.gg/vkDVfNxBTH")
+end)
+
+local w = library:CreateWindow("Buttons")
+
+local b = w:CreateFolder("ALL")
+
+b:Button("Press All Buttons",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeNY/button-all/main/button%20all", true))()
+end)
+b:DestroyGui()
